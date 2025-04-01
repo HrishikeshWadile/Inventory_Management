@@ -1,13 +1,14 @@
+// add your firebase project data in given fields
 {
   "project_info": {
-    "project_number": "871821299667",
-    "project_id": "inventory-management-76000",
-    "storage_bucket": "inventory-management-76000.firebasestorage.app"
+    "project_number": "",
+    "project_id": "",
+    "storage_bucket": ""
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:871821299667:android:679c330127fdd58e356926",
+        "mobilesdk_app_id": "",
         "android_client_info": {
           "package_name": "com.example.inventorymanagement"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC9ajKX4Ll_YQjhxF5q4IZe7ZhtCyBwnrk"
+          "current_key": "k"
         }
       ],
       "services": {
