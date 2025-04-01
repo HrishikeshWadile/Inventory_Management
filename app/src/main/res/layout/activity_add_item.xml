@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_item_page"
+        android:textColor="#000"
+        android:padding="8dp"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:background="#FF6E00"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/enter_item_name"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/itemQuantity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/enter_item_quantity"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+    <EditText
+        android:id="@+id/itemPrice"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/enter_item_price"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemQuantity" />
+
+    <Button
+        android:id="@+id/saveItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_item"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
